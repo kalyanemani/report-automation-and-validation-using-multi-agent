@@ -1,0 +1,58 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environment variables & secrets
+.env
+.env.local
+*.key
+
+# Generated ChromaDB and cache
+data/chromadb/
+data/parsed/
+data/logs/
+
+# Confidential client submittals, reports, procedures
+data/documents/*
+!data/documents/README.md
+data/reports/*
+!data/reports/README.md
+data/procedures/*
+!data/procedures/README.md
+
+# Submittal PDFs and scratch files
+data/*.pdf
+data/*.png
+!data/samples/*.png
+scratch_isgec_pages/
+scratch/
+
+# Documentation PDFs allowed, ignore any stray client submittal PDFs
+*.pdf
+!QDR-AI_Documentation.pdf
+!QDR-AI_Handover_Guide.pdf
+!QDR-AI_Handover_Guide_v2.pdf
+!QDR-AI_User_Guide.pdf
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.tmp
+~$*
+
+# Logs
+*.log
+*.log.*
